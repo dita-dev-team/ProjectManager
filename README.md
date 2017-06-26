@@ -1,6 +1,7 @@
-##ProjectManager
 
-<p> Project Manager is a laravel web project management application, based on tasks given to different people by the owner of the project(Project Manager) </p>
+#ProjectManager
+
+Project Manager is a laravel web project management application, based on tasks given to different people by the owner of the project(Project Manager)
 
 ##Initialization
 
