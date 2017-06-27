@@ -17,4 +17,6 @@ Route::get('/', function () {
 Route::get('about',function (){
    return view('aboutPage');
 });
-
+Route::get('tutorials',function(){
+   return view('tutorials');
+});
