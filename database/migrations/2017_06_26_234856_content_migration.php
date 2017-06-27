@@ -13,6 +13,13 @@ class ContentMigration extends Migration
      */
     public function up()
     {
+        Schema::create('Content',function (Blueprint $table){
+            $table->foreign('page');
+            $table->string('section');
+            $table->text('body');
+            $table->timestamp('create_at');
+
+        });
 
     }
 
@@ -23,6 +30,6 @@ class ContentMigration extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('Content');
     }
 }
