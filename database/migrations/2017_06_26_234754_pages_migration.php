@@ -28,6 +28,6 @@ class PagesMigration extends Migration
      */
     public function down()
     {
-        Schema::drop('Pages');
+        Schema::drop('pages');
     }
 }

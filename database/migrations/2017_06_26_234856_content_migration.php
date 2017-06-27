@@ -32,6 +32,6 @@ class ContentMigration extends Migration
      */
     public function down()
     {
-        Schema::drop('Content');
+        Schema::drop('content');
     }
 }
