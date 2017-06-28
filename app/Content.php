@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Content extends Model
 {
-    protected $fillable=[
+    protected $fillable = [
                 'page_id','section','body'
         ];
 
