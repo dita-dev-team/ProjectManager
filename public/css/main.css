@@ -2,7 +2,7 @@
 html{
     height: 100%;
     background: #151515 !important;
-    color: #5bc0de;
+    color: #2ab27b;
 }
 
 body{
@@ -25,12 +25,12 @@ body{
 }
 
 .nav .nav-item a, .nav-item {
-    color: #5bc0de;
+    color: #2ab27b;
 }
 
 .heading {
     height: 30%;
-    background: #46b8da;
+    background: #41b2f4;
     padding: 20px 10% 0 10%;
 }
 
@@ -50,7 +50,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    color: #46b8da;
+    color: #2ab27b;
     margin-left: 20px;
 }
 
