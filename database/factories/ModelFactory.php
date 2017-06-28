@@ -23,3 +23,10 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'username' => $faker->userName
     ];
 });
+$factory ->define(App\Page::class,function(Faker\Generator $faker){
+    return[
+        'page'=>$faker->name
+
+
+    ];
+});

@@ -20,3 +20,4 @@ Route::get('about',function (){
 Route::get('tutorials',function(){
    return view('tutorials');
 });
+
