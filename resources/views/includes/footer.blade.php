@@ -1,3 +1,3 @@
 <footer>
-    <p>Copyright &copy {{ date('Y') }} Dita Dev</p>
+    <p>Copyright &copy {{ date('Y') }} DITA Dev</p>
 </footer>

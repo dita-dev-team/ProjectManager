@@ -22,4 +22,6 @@ Route::get('tutorials',function(){
    return view('tutorials');
 });
 
-Route::get('profile/{id}', 'UserProfileController@getUserProfile');
+//TODO: Will implement in future with the user views
+//Ahead of its time.
+//Route::get('profile/{id}', 'UserProfileController@getUserProfile');
