@@ -2,7 +2,7 @@
     <div class="navbar">
         <ul class="nav nav-tabs ">
             <li class="nav-item" id="brand">
-                DitaDev
+                DevTeam
             </li>
         </ul>
         <ul class="nav nav-tabs pull-xs-right">
@@ -17,6 +17,4 @@
             </li>
         </ul>
     </div>
-
-    {{----}}
 </header>
