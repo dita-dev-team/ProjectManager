@@ -24,9 +24,20 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 $factory ->define(App\Page::class,function(Faker\Generator $faker){
-    return[
-        'page'=>$faker->name
-
-
+    return [
+        'page'=>$faker->name,
     ];
 });
+$factory->define(App\Content::class,function(Faker\Generator $faker){
+   return [
+
+
+
+
+
+   ] ;
+
+
+});
+
+

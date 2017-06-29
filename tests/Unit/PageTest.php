@@ -21,13 +21,13 @@ class PageTest extends TestCase
         $page=factory(App\Page::class)->create();
 
         $this->assertDatabaseHas('pages',[
-            'page'=>$page->pagen
+            'page'=>$page->page
         ]);
-        $page->pagen="abstract";
+        $page->page='abstraction';
         $page->save();
 
         $this->assertDatabaseHas('pages',[
-           'page'=>$page->pagen
+           'page'=>$page->page
         ]);
 
 
