@@ -19,7 +19,9 @@ Route::get('about',function (){
 });
 
 Route::get('tutorials',function(){
-   return view('tutorials');
+    return view('tutorials', [
+        'pageTitle' => 'Tutorials Page'
+    ]);
 });
 
 //TODO: Will implement in future with the user views
