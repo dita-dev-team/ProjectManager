@@ -15,11 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('about',function (){
-   return view('aboutPage');
+    return view('aboutPage', [
+        'pageTitle' => 'About Project Manager'
+    ]);
 });
 
-Route::get('tutorials',function(){
-   return view('tutorials');
+Route::get('tutorials', function () {
+    return view('tutorials');
 });
 
 //TODO: Will implement in future with the user views
