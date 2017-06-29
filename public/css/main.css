@@ -1,11 +1,11 @@
 /*tags*/
-html {
+html{
     height: 100%;
     background: #151515 !important;
     color: #2ab27b;
 }
 
-body {
+body{
     height: 100%;
     background: inherit;
     margin: 0 auto;
@@ -39,7 +39,7 @@ body {
     color: #303030;
 }
 
-.content {
+.welcome-card {
     height: 30%;
     margin: -40px 10% 0 10%;
     background: #303030;
@@ -110,7 +110,7 @@ footer{
     color: #2e3436;
 }*/
 
-.error {
+.error{
     margin: 30px auto;
     padding: 40px;
     font-size: 50px;
@@ -118,7 +118,6 @@ footer{
     background-color: #f44262;
     color: #000;
 }
-
 /*ids*/
 
 /*media*/

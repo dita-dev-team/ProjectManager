@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class ContentMigration extends Migration
 {
@@ -13,11 +13,13 @@ class ContentMigration extends Migration
      */
     public function up()
     {
-        Schema::create('Content',function (Blueprint $table){
-            $table->foreign('page');
+        Schema::create('content', function (Blueprint $table) {
+            $table->increments('id');
+            $table->unsignedInteger('page_id');
             $table->string('section');
             $table->text('body');
-            $table->timestamp('create_at');
+            $table->timestamps();
+            $table->foreign('page_id')->references('id')->on('pages');
 
         });
 
@@ -30,6 +32,6 @@ class ContentMigration extends Migration
      */
     public function down()
     {
-        Schema::drop('Content');
+        Schema::drop('content');
     }
 }

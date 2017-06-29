@@ -18,3 +18,10 @@ Route::get('about',function (){
    return view('aboutPage');
 });
 
+Route::get('tutorials',function(){
+   return view('tutorials');
+});
+
+//TODO: Will implement in future with the user views
+//Ahead of its time.
+Route::get('profile/{id}', 'UserProfileController@getUserProfile');
