@@ -30,7 +30,6 @@ $factory ->define(App\Page::class,function(Faker\Generator $faker){
 });
 $factory->define(App\Content::class,function(Faker\Generator $faker){
    return [
-        'page_id'=>$faker->randomNumber(true),
         'section'=>$faker->word,
         'body'=>$faker->word
    ];

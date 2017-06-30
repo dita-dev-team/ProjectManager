@@ -3,8 +3,8 @@
 namespace Tests\Unit;
 
 use App;
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Tests\TestCase;
 
 class ContentTest extends TestCase
 {
@@ -19,11 +19,9 @@ class ContentTest extends TestCase
 
         $content=factory(App\Content::class)->create();
         $this->assertDatabaseHas('content',[
-            'page_id'=>$content->page_id,
             'section'=>$content->section,
             'body'=>$content->body
         ]);
-        $content->page_id=256;
         $content->section='TheBeginning';
         $content->body='Loremyeandcra';
         $content->save();
