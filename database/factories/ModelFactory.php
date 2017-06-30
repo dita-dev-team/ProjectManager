@@ -23,3 +23,17 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'username' => $faker->userName
     ];
 });
+$factory ->define(App\Page::class,function(Faker\Generator $faker){
+    return [
+        'page'=>$faker->name,
+    ];
+});
+$factory->define(App\Content::class,function(Faker\Generator $faker){
+   return [
+        'page_id'=>$faker->randomNumber(true),
+        'section'=>$faker->word,
+        'body'=>$faker->word
+   ];
+});
+
+

@@ -9,6 +9,8 @@ class Content extends Model
     protected $fillable = [
                 'page_id','section','body'
         ];
+        protected $table='content';
+
 
 
 
