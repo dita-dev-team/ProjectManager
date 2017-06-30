@@ -6,15 +6,21 @@
             </li>
         </ul>
         <ul class="nav nav-tabs pull-xs-right">
-            <li class="nav-item">
-                <a class="nav-link" href="#"> Home </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"> About </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"> Tutorial </a>
-            </li>
+            @if($navbar)
+                @foreach($navbar as $item)
+                    @if (Route::currentRouteName() == strtolower($item['text']))
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ $item['link'] }}"> {{ $item['text'] }} </a>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ $item['link'] }}"> {{ $item['text'] }} </a>
+                        </li>
+                    @endif
+                @endforeach
+            @endif
+
+
         </ul>
     </div>
 </header>
