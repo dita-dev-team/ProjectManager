@@ -30,3 +30,5 @@ Route::get('tutorials',function(){
 //TODO: Will implement in future with the user views
 //Ahead of its time.
 Route::get('profile/{id}', 'UserProfileController@getUserProfile');
+
+Auth::routes();
