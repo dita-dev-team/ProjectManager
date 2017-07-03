@@ -8,11 +8,11 @@
     <div class="card card-block content" style="height:60vh;background-color: antiquewhite">
         <div class="text-info"><h1> Table Of Contents</h1></div>
         <ul class="nv-bullet"><li><a href="">What Do I Need?</a></li>
-        <li><a href="">Is this Your First Laravel Application?</a></li>
-        <li><a href="">Dealing With Forms</a></li>
-        <li><a href="">Dealing With Database Migrations</a></li>
-        <li><a href="">Defining Parameters to Projects</a></li>
-        <li><a href="">See Initialization Demo</a></li>
+        <li><a href="{{url('/about')}}">Is this Your First Laravel Application?</a></li>
+        <li><a href="{{url('/')}}">Dealing With Forms</a></li>
+        <li><a href="{{url('')}}">Dealing With Database Migrations</a></li>
+        <li><a href="{{url('')}}">Defining Parameters to Projects</a></li>
+        <li><a href="{{url('')}}">See Initialization Demo</a></li>
         </ul>
         <p class="body">
             Here we would like to show the very basics of Project Manager in a short, simple
