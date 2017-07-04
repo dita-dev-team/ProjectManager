@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ContentController@homeContent');
 Route::get('about',function (){
    return view('aboutPage');
 });
