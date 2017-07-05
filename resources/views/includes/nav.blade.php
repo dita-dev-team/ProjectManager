@@ -1,6 +1,4 @@
-
 <header>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <div class="navbar">
         <ul class="nav nav-tabs ">
             <li class="nav-item" id="brand">
@@ -8,16 +6,34 @@
             </li>
         </ul>
         <ul class="nav nav-tabs pull-xs-right">
-            <li class="nav-item">
-                <a class="nav-link" href="{{url('/')}}"><i class="icon-home"style="size:50px;margin-right: 10px"></i>Home</a>
-            </li>
-            <li class="nav-item">
+            @if($navbar)
+                @foreach($navbar as $item)
+                    @if (Route::currentRouteName() == strtolower($item['text']))
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ $item['link'] }}"> {{ $item['text'] }} </a>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ $item['link'] }}"> {{ $item['text'] }} </a>
+                        </li>
+                    @endif
+                @endforeach
+                @if(Auth::check())
 
-                <a class="nav-link" href="{{url('/about')}}"><i class="icon-question-sign"style="margin-right:10px"></i>About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{'/tutorials'}}"><i class="icon-facetime-video"style="margin-right: 10px"></i>Tutorials</a>
-            </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('logout') }}"> Logout </a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a class="nav-link {{ Route::currentRouteName() == 'register' ? 'active' : '' }}"
+                           href="{{ route('register') }}"> Register </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ Route::currentRouteName() == 'login' ? 'active' : '' }}"
+                           href="{{ route('login') }}"> Login </a>
+                    </li>
+                @endif
+            @endif
         </ul>
     </div>
 </header>
