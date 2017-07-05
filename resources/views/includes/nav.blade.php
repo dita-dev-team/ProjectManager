@@ -1,4 +1,6 @@
+
 <header>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <div class="navbar">
         <ul class="nav nav-tabs ">
             <li class="nav-item" id="brand">
@@ -7,13 +9,14 @@
         </ul>
         <ul class="nav nav-tabs pull-xs-right">
             <li class="nav-item">
-                <a class="nav-link" href="{{url('/')}}"> Home </a>
+                <a class="nav-link" href="{{url('/')}}"><i class="icon-home" style="size:50px"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url('/about')}}"> About </a>
+
+                <a class="nav-link" href="{{url('/about')}}"><i class="icon-question-sign"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{'/tutorials'}}"> Tutorial </a>
+                <a class="nav-link" href="{{'/tutorials'}}"><i class="icon-briefcase"></i></a>
             </li>
         </ul>
     </div>

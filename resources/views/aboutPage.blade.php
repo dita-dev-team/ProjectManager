@@ -62,13 +62,14 @@
             margin-bottom: 30px;
         }
     </style>
-</head>
-<body>
-    <div class="content">
+    <div class="title">
         <h3>
             About Project Manager
         </h3>
     </div>
+</head>
+<body>
+
 
 </body>
 
