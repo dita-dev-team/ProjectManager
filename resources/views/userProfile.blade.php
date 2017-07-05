@@ -26,8 +26,8 @@
                             <label>email: </label>
                             <li>JohnDoe@mail.com</li>
                         </div>
-                        <i class="fa fa-edit fa-2x" id="editProfile"></i>
                     </ul>
+                    <i class="fa fa-edit fa-2x" id="editProfile"></i>
                 </div>
                 <div class="col2">
                     <form class="form-group">

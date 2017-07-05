@@ -52,7 +52,6 @@ footer {
 }
 
 .profile{
-    display: flex;
     background-color: #2ab27b;
     color: #2e3436;
     margin: 10px auto;
@@ -60,11 +59,7 @@ footer {
     overflow: hidden;
 }
 
-.main-col{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .col{
     flex: 1;
@@ -107,10 +102,6 @@ footer {
     width: 80%;
 }
 
-.display-details{
-    display: flex;
-}
-
 .display-details label{
     flex: 1;
     margin: 10px 10px 10px 10px;
@@ -132,23 +123,78 @@ footer {
 /*ids*/
 
 /*media*/
-@media screen and(max-width: 1920px) {
+@media (min-width: 1920px) {
     img{
         max-width: 1024px;
         max-height: 768px;
     }
+
+    .main-col{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile{
+        display: flex;
+    }
+
+    .display-details{
+        display: flex;
+    }
 }
 
-@media screen and(max-width: 1280px) {
+@media (min-width: 1280px) {
     img{
         max-width: 1024px;
         max-height: 768px;
     }
+
+    .main-col{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile{
+        display: flex;
+    }
+
+    .display-details{
+        display: flex;
+    }
 }
 
-@media screen and(max-width: 1024px) {
+@media (min-width: 1024px) {
     img{
         max-width: 800px;
         max-height: 600px;
+    }
+
+    .main-col{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile{
+        display: flex;
+    }
+
+    .display-details{
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    img{
+        max-width: 400px;
+        max-height: 300px;
+    }
+
+    .col i{
+        background-color: inherit;
+        cursor: pointer;
+        float: right;
     }
 }

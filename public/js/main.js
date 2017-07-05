@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     //Show Profile Forms
     $('#editProfile').on('click', function () {
-        $('.col2').fadeIn(600).show();
+        $('.col2').fadeIn(1200).show();
+        $('.col i').hide();
     });
 });
