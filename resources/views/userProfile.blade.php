@@ -14,19 +14,19 @@
                     <div class="display-details">
                         <label>Name: </label>
                         <li>John Doe</li>
-                        <button><i class="fa fa-edit-0 fa-2x"></i></button>
+                        <i class="fa fa-edit fa-2x"></i>
                     </div>
 
                     <div class="display-details">
                         <label>username: </label>
                         <li>JD</li>
-                        <button><i class="fa fa-edit-0 fa-2x"></i></button>
+                        <i class="fa fa-edit fa-2x"></i>
                     </div>
 
                     <div class="display-details">
                         <label>email: </label>
                         <li>JohnDoe@mail.com</li>
-                        <button><i class="fa fa-edit-0 fa-2x"></i></button>
+                        <i class="fa fa-edit fa-2x"></i>
                     </div>
                 </ul>
             </div>
