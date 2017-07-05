@@ -9,26 +9,34 @@
             <div class="col">
                 <img src="{{ asset('img/user.png') }}" alt="">
             </div>
-            <div class="col">
-                <ul>
-                    <div class="display-details">
-                        <label>Name: </label>
-                        <li>John Doe</li>
-                        <i class="fa fa-edit fa-2x"></i>
-                    </div>
+            <div class="main-col">
+                <div class="col">
+                    <ul>
+                        <div class="display-details">
+                            <label>Name: </label>
+                            <li>John Doe</li>
+                        </div>
 
-                    <div class="display-details">
-                        <label>username: </label>
-                        <li>JD</li>
-                        <i class="fa fa-edit fa-2x"></i>
-                    </div>
+                        <div class="display-details">
+                            <label>username: </label>
+                            <li>JD</li>
+                        </div>
 
-                    <div class="display-details">
-                        <label>email: </label>
-                        <li>JohnDoe@mail.com</li>
-                        <i class="fa fa-edit fa-2x"></i>
-                    </div>
-                </ul>
+                        <div class="display-details">
+                            <label>email: </label>
+                            <li>JohnDoe@mail.com</li>
+                        </div>
+                        <i class="fa fa-edit fa-2x" id="editProfile"></i>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <form class="form-group">
+                        {{ csrf_field() }}
+                        <input class="form-control" id="name" type="text" placeholder="New Name: Hit Enter To Save">
+                        <input class="form-control" id="username" type="text" placeholder="New Username: Hit Enter To Save">
+                        <input class="form-control" id="email" type="email" placeholder="New email: Hit Enter To Save">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
