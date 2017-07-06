@@ -8,7 +8,7 @@ class Page extends Model
 {
     protected $fillable = [
 
-      'page'
+        'page'
 
     ];
 }

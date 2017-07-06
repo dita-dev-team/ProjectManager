@@ -7,9 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Content extends Model
 {
     protected $fillable = [
-                'page_id','section','body'
-        ];
+        'section', 'body'
+    ];
+    protected $table = 'content';
 
-
-
+    public function page()
+    {
+        return $this->belongsTo('App\Page');
+    }
 }
