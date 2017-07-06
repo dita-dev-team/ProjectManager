@@ -9,29 +9,28 @@ use Tests\TestCase;
 class ContentTest extends TestCase
 {
     use DatabaseTransactions;
+
     /**
      * A basic test example.
      *
      * @return void
      */
 
-    public function testContentCreateAndUpdate(){
+    public function testContentCreateAndUpdate()
+    {
 
-        $content=factory(App\Content::class)->create();
-        $this->assertDatabaseHas('content',[
-            'section'=>$content->section,
-            'body'=>$content->body
+        $content = factory(App\Content::class)->create();
+        $this->assertDatabaseHas('content', [
+            'section' => $content->section,
+            'body' => $content->body
         ]);
-        $content->section='TheBeginning';
-        $content->body='Loremyeandcra';
+        $content->section = 'TheBeginning';
+        $content->body = 'Loremyeandcra';
         $content->save();
-        $this->assertDatabaseHas('content',[
-            'section'=>$content->section,
-            'body'=>$content->body
+        $this->assertDatabaseHas('content', [
+            'section' => $content->section,
+            'body' => $content->body
         ]);
-
-
-
 
 
     }

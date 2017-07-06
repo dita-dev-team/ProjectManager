@@ -2,34 +2,35 @@
 
 namespace Tests\Unit;
 
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use App;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Tests\TestCase;
 
 class PageTest extends TestCase
 {
 
     use DatabaseTransactions;
+
     /**
      * A basic test example.
      *
      * @return void
      */
 
-    public function testPageCreateUpdate(){
+    public function testPageCreateUpdate()
+    {
 
-        $page=factory(App\Page::class)->create();
+        $page = factory(App\Page::class)->create();
 
-        $this->assertDatabaseHas('pages',[
-            'page'=>$page->page
+        $this->assertDatabaseHas('pages', [
+            'page' => $page->page
         ]);
-        $page->page='abstraction';
+        $page->page = 'abstraction';
         $page->save();
 
-        $this->assertDatabaseHas('pages',[
-           'page'=>$page->page
+        $this->assertDatabaseHas('pages', [
+            'page' => $page->page
         ]);
-
 
 
     }
