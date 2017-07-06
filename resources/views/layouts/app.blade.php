@@ -18,8 +18,9 @@
 <div class="app">
     @include('../includes/nav')
     @yield('content')
-    @include('../includes/footer')
 </div>
+
+@include('../includes/footer')
 
 <!-- Scripts -->
 @include('../includes/scripts')

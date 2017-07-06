@@ -1,4 +1,4 @@
-<footer class="page-footer teal center-on-small-only">
+<footer class="page-footer teal center-on-small-only footer">
     <div class="container-fluid">
         <div class="row">
             <!--First column-->
