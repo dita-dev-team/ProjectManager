@@ -33,7 +33,8 @@
                     <form class="form-group">
                         {{ csrf_field() }}
                         <input class="form-control" id="name" type="text" placeholder="New Name: Hit Enter To Save">
-                        <input class="form-control" id="username" type="text" placeholder="New Username: Hit Enter To Save">
+                        <input class="form-control" id="username" type="text"
+                               placeholder="New Username: Hit Enter To Save">
                         <input class="form-control" id="email" type="email" placeholder="New email: Hit Enter To Save">
                     </form>
                 </div>
