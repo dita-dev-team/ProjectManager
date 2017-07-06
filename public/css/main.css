@@ -7,13 +7,6 @@ body {
     padding-top: 145px;
 }
 
-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
 #icon {
     font-size: 22px;
     color: rgb(255, 255, 255);
@@ -27,50 +20,7 @@ footer {
     text-shadow: 0 0 rgb(67, 88, 97), 1px 1px rgb(69, 90, 100), 2px 2px rgb(71, 92, 102), 3px 3px rgb(72, 94, 105), 4px 4px rgb(74, 96, 107), 5px 5px rgb(76, 99, 110), 6px 6px rgb(77, 101, 112), 7px 7px rgb(79, 103, 114), 8px 8px rgb(81, 105, 117), 9px 9px rgb(82, 107, 119), 10px 10px rgb(84, 110, 122), 11px 11px rgb(86, 112, 124), 12px 12px rgb(88, 114, 127), 13px 13px rgb(89, 116, 129), 14px 14px rgb(91, 118, 132), 15px 15px rgb(93, 121, 134), 16px 16px rgb(94, 123, 137);
 }
 
-/*
-.app {
-    height: 100%;
-}
-
-.navbar, .nav {
-    background: #303030;
-}
-
-#brand {
-    margin-left: 20px;
-}
-
-.nav .nav-item a, .nav-item {
-    color: #2ab27b;
-}
-
-.heading {
-    height: 30%;
-    background: #41b2f4;
-    padding: 20px 10% 0 10%;
-}
-
-.heading h1 {
-    font-size: 4em;
-    color: #303030;
-}
-
-.content {
-    min-height: 30%;
-    margin: -40px 10% 0 10%;
-    background: #303030;
-}
-
-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: #2ab27b;
-    margin-left: 20px;
-}
-
-/*nav{
+nav{
     margin: 10px auto;
     padding: 10px;
     overflow: hidden;
