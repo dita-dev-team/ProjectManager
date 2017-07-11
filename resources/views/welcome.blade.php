@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('content')
 
+<div class="heading">
+    <h1>{{ $pageTitle or "Project Manager" }}</h1>
+</div>
+
 <div class="container">
     <br>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
