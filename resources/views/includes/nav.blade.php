@@ -7,6 +7,11 @@
             </button>
             <a class="navbar-brand" href="#">
                 <p id="icon" class="mx-auto">DEV</p>
+                {{--<p>PROJECT MANAGER</p>--}}
+            </a>
+            <a class="navbar-brand" href="#">
+                {{--<p id="icon" class="mx-auto">DEV</p>--}}
+                <p><b>PROJECT MANAGER</b></p>
             </a>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">

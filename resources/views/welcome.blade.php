@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="heading">
-    <h1>{{ $pageTitle or "Project Manager" }}</h1>
-</div>
+{{--<div class="heading">--}}
+    {{--<h1>{{ $pageTitle or "Project Manager" }}</h1>--}}
+{{--</div>--}}
 
 <div class="container">
-    <br>
+    {{--<br>--}}
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -48,6 +48,7 @@
         </a>
     </div>
 
+    <div class="row"></div>
     {{--New Row with 3 Columns--}}
 
     <div class="row">
@@ -83,6 +84,86 @@
             <p>
                 <a class="btn btn-primary btn-large" href="#">Learn more</a>
             </p>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-12">
+        <blockquote class="pull-right">
+            <p>
+                <span>“It does not take much strength to do things, but it requires a great deal of strength to decide what to do.”</span>
+            </p>
+            <p>
+                <span>―</span> <strong>Elbert Hubbard</strong>
+            </p>
+        </blockquote>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center">
+                    PROJECT TEAM
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle" />
+                <dl>
+                    <dt>
+                        Description lists
+                    </dt>
+                    <dd>
+                        A description list is perfect for defining terms.
+                    </dd>
+                    <dt>
+                        Euismod
+                    </dt>
+                    <dd>
+                        Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                    </dd>
+                    <dd>
+                        Donec id elit non mi porta gravida at eget metus.
+                    </dd>
+                   
+                </dl>
+            </div>
+            <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle" />
+                <dl>
+                    <dt>
+                        Description lists
+                    </dt>
+                    <dd>
+                        A description list is perfect for defining terms.
+                    </dd>
+                    <dt>
+                        Euismod
+                    </dt>
+                    <dd>
+                        Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle" />
+                <dl>
+                    <dt>
+                        Description lists
+                    </dt>
+                    <dd>
+                        A description list is perfect for defining terms.
+                    </dd>
+                    <dt>
+                        Euismod
+                    </dt>
+                    <dd>
+                        Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                    </dd>
+
+                </dl>
+            </div>
         </div>
     </div>
 </div>
