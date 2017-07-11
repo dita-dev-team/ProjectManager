@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Project Manager') }}</title>
 
     <!-- Styles -->
     @include('../includes/styles')
@@ -18,8 +18,9 @@
 <div class="app">
     @include('../includes/nav')
     @yield('content')
-    @include('../includes/footer')
 </div>
+
+@include('../includes/footer')
 
 <!-- Scripts -->
 @include('../includes/scripts')

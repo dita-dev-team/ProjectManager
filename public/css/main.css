@@ -1,116 +1,83 @@
-/*tags*/
-html {
+html, body {;
     height: 100%;
-    background: #151515 !important;
-    color: #2ab27b;
 }
 
 body {
-    height: 100%;
-    background: inherit;
-    margin: 0 auto;
-    padding: 0;
+    padding-top: 145px;
+    display: flex;
+    flex-direction: column;
 }
 
 .app {
-    height: 100%;
+    flex: 1 0 auto;
 }
 
-.navbar, .nav {
-    background: #303030;
-}
-
-#brand {
-    margin-left: 20px;
-}
-
-.nav .nav-item a, .nav-item {
-    color: #2ab27b;
-}
-
-.heading {
-    height: 30%;
-    background: #41b2f4;
-    padding: 20px 10% 0 10%;
-}
-
-.heading h1 {
-    font-size: 4em;
-    color: #303030;
-}
-
-.content {
-    height: 30%;
-    margin: -40px 10% 0 10%;
-    background: #303030;
-}
-
-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: #2ab27b;
-    margin-left: 20px;
-}
-
-/*nav{
-    margin: 10px auto;
-    padding: 10px;
-    background: #303030;
-    color: inherit;
-    min-height: 55px;
-    border-bottom: solid 2px #2ab27b;
-}
-
-nav ul{
-    float: right;
-    list-style: none;
-}
-
-nav li{
-    float: left;
-    padding: 10px;
-
-}
-nav li a{
-    color: inherit;
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav a#brand{
-    float: left;
-    margin: 10px auto;
-    padding: 10px;
-    color: inherit;
-    border: solid 2px #46b8da;
-    text-decoration: none;
-}
-
-nav li.current a, nav a:hover{
-    background: #666666;
-}
-
-
-footer{
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #303030;
-    text-align: right;
-    border-top: solid 2px #2ab27b;
-}
-
-!*classes*!
-.heading h1{
+#icon {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(96, 125, 139);
+    height: 54px;
+    width: 54px;
+    line-height: 54px;
+    border-radius: 11%;
+    overflow: hidden;
     text-align: center;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #46b8da;
-    color: #2e3436;
-}*/
+    text-shadow: 0 0 rgb(67, 88, 97), 1px 1px rgb(69, 90, 100), 2px 2px rgb(71, 92, 102), 3px 3px rgb(72, 94, 105), 4px 4px rgb(74, 96, 107), 5px 5px rgb(76, 99, 110), 6px 6px rgb(77, 101, 112), 7px 7px rgb(79, 103, 114), 8px 8px rgb(81, 105, 117), 9px 9px rgb(82, 107, 119), 10px 10px rgb(84, 110, 122), 11px 11px rgb(86, 112, 124), 12px 12px rgb(88, 114, 127), 13px 13px rgb(89, 116, 129), 14px 14px rgb(91, 118, 132), 15px 15px rgb(93, 121, 134), 16px 16px rgb(94, 123, 137);
+}
 
-.error {
+
+.col{
+    flex: 1;
+    border: solid 2px #2e3436;
+    margin: 10px 10px auto;
+}
+
+.col ul li{
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: #4cae4c;
+}
+
+.col img{
+    max-width: 1280px;
+    max-height: 1024px;
+    width: 100%;
+}
+
+.col i{
+    margin: 10px 10px 10px 10px;
+    background-color: inherit;
+    cursor: pointer;
+    float: right;
+}
+
+.col2{
+    padding: 10px;
+    flex: 1;
+    border: solid 2px #2e3436;
+    margin: 10px 10px auto;
+}
+
+.col2 input{
+    margin: auto;
+    padding: 20px;
+    background-color: inherit;
+    color: #2e3436;
+    width: 80%;
+}
+
+.display-details label{
+    flex: 1;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+}
+
+.display-details li{
+    flex: 4;
+}
+
+.error{
     margin: 30px auto;
     padding: 40px;
     font-size: 50px;
@@ -121,3 +88,78 @@ footer{
 /*ids*/
 
 /*media*/
+@media (min-width: 1920px) {
+    img {
+        max-width: 1024px;
+        max-height: 768px;
+    }
+
+    .main-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        display: flex;
+    }
+
+    .display-details {
+        display: flex;
+    }
+}
+
+@media (min-width: 1280px) {
+    img {
+        max-width: 1024px;
+        max-height: 768px;
+    }
+
+    .main-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        display: flex;
+    }
+
+    .display-details {
+        display: flex;
+    }
+}
+
+@media (min-width: 1024px) {
+    img {
+        max-width: 800px;
+        max-height: 600px;
+    }
+
+    .main-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        display: flex;
+    }
+
+    .display-details {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    img {
+        max-width: 400px;
+        max-height: 300px;
+    }
+
+    .col i {
+        background-color: inherit;
+        cursor: pointer;
+        float: right;
+    }
+}
