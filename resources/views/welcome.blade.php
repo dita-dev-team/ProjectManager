@@ -1,12 +1,13 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="heading">
-    <h1>{{ $pageTitle or "Project Manager" }}</h1>
-</div>
+{{--<div class="heading">--}}
+    {{--<h1>{{ $pageTitle or "Project Manager" }}</h1>--}}
+{{--</div>--}}
 
-<div class="container">
-    <br>
+<div class="container" xmlns:background="http://www.w3.org/1999/xhtml" xmlns:color="http://www.w3.org/1999/xhtml"
+     xmlns:back-ground="http://www.w3.org/1999/xhtml">
+    {{--<br>--}}
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -48,10 +49,22 @@
         </a>
     </div>
 
+    <div class="row"></div>
     {{--New Row with 3 Columns--}}
 
-    <div class="row">
-        <div class="col-md-4">
+    <div class="row extra-bottom-padding">
+        <div class="col-md-4" align="center">
+            <h2>
+                Heading
+            </h2>
+            <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+                <a class="btn btn-large" back-ground:color="green" href="#">Learn more</a>
+            </p>
+        </div>
+        <div class="col-md-4" align="center">
             <h2>
                 Heading
             </h2>
@@ -62,18 +75,7 @@
                 <a class="btn btn-primary btn-large" href="#">Learn more</a>
             </p>
         </div>
-        <div class="col-md-4">
-            <h2>
-                Heading
-            </h2>
-            <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            </p>
-            <p>
-                <a class="btn btn-primary btn-large" href="#">Learn more</a>
-            </p>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-4" align="center">
             <h2>
                 Heading
             </h2>
@@ -85,5 +87,17 @@
             </p>
         </div>
     </div>
+    <div class="row">
+    <div class="col-md-12">
+        <blockquote class="pull-right" background="blue">
+            <p>
+                <span>“It does not take much strength to do things, but it requires a great deal of strength to decide what to do.”</span>
+            </p>
+            <p>
+                <span>―</span> <strong>Elbert Hubbard</strong>
+            </p>
+        </blockquote>
+    </div>
+    </div>
 </div>
-@endsection
+    @endsection
