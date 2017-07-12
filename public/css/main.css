@@ -89,6 +89,24 @@ body {
     background-color: #f44262;
     color: #000;
 }
+
+.well{
+    border: solid 2px #2e3436;
+}
+
+.content-list{
+    text-align: center;
+    background-color: #2e3436;
+    padding: 10px;
+}
+
+.content-list ul {
+    margin: 10px 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
 /*ids*/
 
 /*media*/
