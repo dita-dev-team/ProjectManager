@@ -61,7 +61,7 @@
                 Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             </p>
             <p>
-                <a class="btn btn-large" href="#">Learn more</a>
+                <a class="btn btn-large" href="#">View more</a>
             </p>
         </div>
         <div class="col-md-4" align="center">
@@ -72,7 +72,7 @@
                 Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             </p>
             <p>
-                <a class="btn btn-large" href="#">Learn more</a>
+                <a class="btn btn-large" href="#">View more</a>
             </p>
         </div>
         <div class="col-md-4" align="center">
@@ -83,13 +83,13 @@
                 Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             </p>
             <p>
-                <a class="btn btn-large" href="#">Learn more</a>
+                <a class="btn btn-large" href="#">View more</a>
             </p>
         </div>
     </div>
     <div class="row">
     <div class="col-md-12">
-        <blockquote class="pull-right" background="blue">
+        <blockquote class="pull-right">
             <p>
                 <span>“It does not take much strength to do things, but it requires a great deal of strength to decide what to do.”</span>
             </p>
