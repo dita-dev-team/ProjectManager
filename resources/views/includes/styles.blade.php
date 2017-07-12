@@ -6,6 +6,15 @@
         width: 100%;
         padding: 10px;
     }
+
+    .well img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .well ul li{
+        padding: 10px;
+    }
 </style>
 <!-- Bootstrap Material Design -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
