@@ -13,15 +13,22 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
 Route::get('about',function (){
-   return view('aboutPage');
-});
+    return view('aboutPage', [
+        'pageTitle' => 'About Project Manager'
+    ]);
+})->name('about');
 
 Route::get('tutorials',function(){
-   return view('tutorials');
-});
+    return view('tutorials', [
+        'pageTitle' => 'Tutorials Page'
+    ]);
+})->name('tutorials');
 
 //TODO: Will implement in future with the user views
 //Ahead of its time.
 Route::get('profile/{id}', 'UserProfileController@getUserProfile');
+
+Auth::routes();

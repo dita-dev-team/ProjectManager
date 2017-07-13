@@ -1,76 +1,92 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
+@section('content')
 
-    <title>DITA::About Project Manager</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
-</head>
-<body>
-    <div class="content">
-        <h3>
-            About Project Manager
-        </h3>
+    <div class="heading">
+        <h1>{{$pageTitle or "Project Manager"}}</h1>
     </div>
 
-</body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 well">
+                <h1>About Project Manager</h1>
+                <ul class="list-unstyled">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad, asperiores assumenda consectetur dolorem earum facilis fuga impedit incidunt maiores necessitatibus odio porro reiciendis tenetur veritatis. Aliquid consequuntur iure repudiandae!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consectetur dolorum enim eos et exercitationem fugiat incidunt ipsa magni nisi nostrum officiis optio placeat, quae quas, repellat tempora temporibus ullam?</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias blanditiis delectus deleniti dolore eius excepturi fuga iste, mollitia, provident quas quis sunt, voluptate. Aliquid necessitatibus obcaecati quos ut? Odit.</li>
+                </ul>
+            </div>
 
+            <div class="well col-md-6">
+                <img src="img/placeholder.png" alt="" class="responsive">
+            </div>
+        </div>
+    </div>
 
-</html>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center">
+                    PROJECT TEAM
+                </h3>
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle"/>
+                <dl>
+                    <dt>
+                        Description lists
+                    </dt>
+                    <dd>
+                        A description list is perfect for defining terms.
+                    </dd>
+                    <dt>
+                        Euismod
+                    </dt>
+                    <dd>
+                        Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                    </dd>
+                    <dd>
+                        Donec id elit non mi porta gravida at eget metus.
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="col-md-4" align="center">
+                <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle"/>
+                <dl>
+                    <dt>
+                        Description lists
+                    </dt>
+                    <dd>
+                        A description list is perfect for defining terms.
+                    </dd>
+                    <dt>
+                        Euismod
+                    </dt>
+                    <dd>
+                        Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="col-md-4" align="center">
+                <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle"/>
+                <dl>
+                    <dt>
+                        Description lists
+                    </dt>
+                    <dd>
+                        A description list is perfect for defining terms.
+                    </dd>
+                    <dt>
+                        Euismod
+                    </dt>
+                    <dd>
+                        Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                    </dd>
+
+                </dl>
+            </div>
+    </div>
+@endsection

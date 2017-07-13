@@ -6,6 +6,7 @@ use App;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Tests\TestCase;
 
+
 class UserTest extends TestCase
 {
     use DatabaseTransactions;
@@ -17,6 +18,7 @@ class UserTest extends TestCase
      */
     public function testUserCreateAndUpdate()
     {
+
         $user = factory(App\User::class)->create();
         // check if user is created
         $this->assertDatabaseHas('users', [
