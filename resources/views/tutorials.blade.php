@@ -4,7 +4,7 @@
 
 
 
-    <div class="container-fluid">
+    <div class="container-fluid tutorials">
 
         <div class="row heading">
             <h1>{{$pageTitle or "Project Manager"}}</h1>
@@ -12,12 +12,11 @@
         <div class="row">
             <div class="col-md-2">
                 <div class="tutorials-sidebar ">
-                    <div class="tutorials-menu-header card default-color text-center z-depth-1">
-                        <div class="card-block">
-                            <p class="white-text">Table Of Contents</p>
-                        </div>
+                    <div class="tutorials-menu-header row">
+                        <h3>Table Of Contents</h3>
+                        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#tutorials-menu"></i>
                     </div>
-                    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="tutorials-menu"></i>
+
                     <div>
                         <ul id="tutorials-menu" class="menu-content collapse out">
                             <li><a href="">Create and Manage a Project</a></li>
@@ -59,16 +58,6 @@
                     </p>
                 </div>
             </div>
-
-        </div>
-        <div class="content-list">
-            <div class="text-info"><h1> Table Of Contents</h1></div>
-            <ul>
-                <li><a href="">Create and Manage a Project</a></li>
-                <li><a href="{{url('')}}">View Tasks Assigned To You</a></li>
-                <li><a href="{{url('')}}">Assign Tasks To Others</a></li>
-                <li><a href="{{url('')}}">Change Your Profile Details</a></li>
-            </ul>
         </div>
     </div>
 @endsection

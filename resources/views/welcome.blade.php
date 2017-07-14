@@ -5,10 +5,9 @@
     {{--<h1>{{ $pageTitle or "Project Manager" }}</h1>--}}
 {{--</div>--}}
 
-<div class="container" xmlns:background="http://www.w3.org/1999/xhtml" xmlns:color="http://www.w3.org/1999/xhtml"
-     xmlns:back-ground="http://www.w3.org/1999/xhtml">
+<div class="container">
     {{--<br>--}}
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -18,41 +17,45 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
 
-            <div class="item active">
-                <img src="/img/pm1.jpg" alt="Chania" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Project Manager</h3>
-                    <p>Project ManagerProject ManagerProject ManagerProject Manager.</p>
+            <div class="carousel-item active">
+                <img src="{{ asset('img/pm6.jpg') }}" alt="Chania">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="animated fadeInDown">
+                        <h3>Project Manager</h3>
+                        <p>Project ManagerProject ManagerProject ManagerProject ManagerProject ManagerProject
+                            Manager</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="item">
-                <img src="/img/pm3.jpeg" alt="Flower" width="460" height="345">
-                <div class="carousel-caption">
-                    <h3>Project Manager</h3>
-                    <p>Project ManagerProject ManagerProject ManagerProject ManagerProject ManagerProject Manager</p>
+            <div class="carousel-item">
+                <img src="{{ asset('img/pm5.jpg') }}" alt="Flower">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="animated fadeInDown">
+                        <h3>Project Manager</h3>
+                        <p>Project ManagerProject ManagerProject ManagerProject ManagerProject ManagerProject
+                            Manager</p>
+                    </div>
+
                 </div>
             </div>
-
-
 
         </div>
 
         <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
 
-    <div class="row"></div>
     {{--New Row with 3 Columns--}}
 
-    <div class="row extra-bottom-padding">
+    <div class="row home-description">
         <div class="col-md-4" align="center">
             <h2>
                 Heading
