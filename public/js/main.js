@@ -4,8 +4,9 @@ $('.col2').hide();
 $(document).ready(function () {
 
     //Show Profile Forms
-    $('#editProfile').on('click', function () {
-        $('.col2').show();
-        $('.col i').hide();
+    $('#edit-profile').on('click', function () {
+        $('.profile-view').fadeOut('slow', function () {
+            $('.profile-edit').fadeIn('slow');
+        });
     });
 });
