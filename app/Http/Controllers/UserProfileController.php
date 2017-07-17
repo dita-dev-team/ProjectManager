@@ -8,7 +8,9 @@ class UserProfileController extends Controller
 {
     public function getUserProfile($id, Request $request){
 
-        return view('userProfile');
+        return view('userProfile', [
+            'pageTitle' => 'Hello, John'
+        ]);
 
 //        if(Auth::check()){
 //
