@@ -69,5 +69,11 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+        //$this->redirectTo = '/login';
     }
+
+//    public function index()
+//    {
+//        return view('welcome');
+//    }
 }

@@ -26,6 +26,8 @@
 
                             <div class="md-form form-group">
                                 <button type="submit" class="btn btn-default btn-lg pull-right">Login</button>
+                                <input type="hidden" name="_token" value="{{ Session::token() }}">
+
                             </div>
                         </form>
                     </div>

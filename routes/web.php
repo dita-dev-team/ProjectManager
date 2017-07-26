@@ -11,9 +11,29 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+
+Route::group(['middleware' => ['web']], function () {    //web middleware to perform <register
+//    Route::post('register', [
+//        'uses' => 'UserController@register',
+//        'as' => 'register'
+//    ]);
+
+//    Route::get('register', function (){
+//        return view('register');
+//    });
+
+
+    Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout'); //logout
+
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('home');
+//});
+
+
+
+
+
 
 Route::get('about',function (){
     return view('aboutPage', [
@@ -32,3 +52,5 @@ Route::get('tutorials',function(){
 Route::get('profile/{id}', 'UserProfileController@getUserProfile');
 
 Auth::routes();
+
+});
